@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: mediumvioletred;
+    font-size: 40px;
+    border-bottom: lightgreen solid 3px;
+    padding: 4px 12px;
+    border-radius: 4px;
+
+}
+.container-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    height: 100px;
+}
+
+.container-option__button {
+    background-color: mediumvioletred;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    border: transparent 3px solid;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#input-breed {
+    outline: none;
+    border: mediumvioletred 3px solid;
+    border-radius: 4px;
+    padding: 6px 4px;
+}
+
+#input-breed:focus {
+    border: lightgreen 3px solid;
+
+}
+
+.container-option__button:active,
+.container-option__button:hover {
+    color: mediumvioletred;
+    font-weight: bold;
+    border-bottom: lightgreen 3px solid;
+    background-color: transparent;
+}
+
+#content {
+    width: 1000px;
+    height: 400px;
+    background-color: lightgreen;
+    border-radius: 6px;
+    margin: 5px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+#content > img {
+    width: 400px;
+    height: 350px;
+    border: mediumvioletred 3px solid;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.2);
+}
+
+ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ol > li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    white-space: nowrap;
+    text-overflow: initial
+}
